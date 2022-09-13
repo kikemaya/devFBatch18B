@@ -1,0 +1,105 @@
+Javascript, DEFINICION:
+
+Un lenguaje multiparadigma, principalmente orientado a prototipos. De alto nivel. Tipado dinàmico. Que trabaja en un solo hilo del procesador de forma concurrente.
+
+================================================================================================================
+TIPADO DINÀMICO vs ESTÀTICO
+
+var tres = 2 -> no especìfica el tipo de dato, tipado debil/dinàmico
+
+int X = 10; -> especìfica el tipo de dato, tipado fuerte/estàtico
+float y = 3.6789
+
+================================================================================================================
+Node js.
+NO ES:
+    - Un lenguaje de programaciòn
+    - Javascript
+    - Un lenguaje de servidor
+    - Orientado al backend
+
+SI ES:
+- Un entorno de ejecuciòn de javascript fuera del navegador.
+
+* Esta formado por tecnologias como:
+
+- Interprete v8 de Google Chrome
+- Libreria de codigo asincrono: LIBUV
+- Màs codigo en c y en el propio javascript
+
+================================================================================================================
+INTERPRETACIÒN vs COMPILACIÒN
+
+- javascript ENGINE: Entorno en donde se interpreta el lenguaje
+
+- INTERPRETACIÒN, se hace en tiempo real (browser ò node junto con su (javascript engine/interprete))
+
+* Instrucciones de js(lenguaje de alto nivel), pasan a:
+
+* Assembler -> traducir las instrucciones de alto nivel y pasarlas a direcciones en memoria (bits, bytes), pasan a:
+
+* machine code(lenguaje maquina) = 0101010 => pulsos electricos/Binario, pasan a ser administrados por el procesador.
+
+
+- COMPILACIÒN, se hace la traduccion desde alto nivel a machine code, pero se crea un archivo .exe con los "binarios"
+
+===============================================================================================================
+COMPONENTES FUNDAMENTALES DE UN SISTEMA OPERTATIVO(ALGUNOS):
+
+* KERNEL: Es un programa de computadora en el núcleo
+del sistema operativo de una computadora y generalmente tiene
+control completo sobre todo en el sistema.
+Es la parte del código del sistema operativo que siempre reside en la memoria
+y facilita las interacciones entre los componentes de hardware y software.
+
+* INTERFAZ GRAFICA DE USUARIO(GUI), puede ser de dos tipos:
+
+  - CLI(COMMAND LINE INTERFACE), Interfaz de linea de comandos. 
+  - ENTORNO DE ESCRITORIO(DESKTOP ENVIRONMENT)/INTERFAZ GRAFICA BASADA EN VENTANAS.
+
+* SISTEMA DE ARCHIVOS: Software de tipo AST, que nos permite navegar por las carpetas y archivos de
+nuestra computadora por medio de rutas absoultas ò relativas.
+
+===============================================================================================================
+DEFINICIÒN: 
+
+* AST(ABSTRACT SYNTAX TREE):
+
+Es una representación de árbol de la estructura sintáctica abstracta del texto
+(a menudo código fuente) escrito en un lenguaje formal. Cada nodo del árbol
+denota una construcción que ocurre en el texto.
+
+===============================================================================================================
+PROCESADOR:
+
+Componente de Hardware que se dedica a hacer computos/calculos y a recibir y transmitir instrucciones en còdigo binario/patrones de pulsos electricos.
+
+2 componentes fundamentales:
+
+* Core/nùcleo(hardware):
+
+Es un procesador, dentro del procesador(sub procesadores). Se encarga de administrar procesos(programas)
+- Cada nùcleo, va administrar un programa y si tienes màs de uno, los programas se van a ejecutar en paralelo/al mismo tiempo.
+
+* Thread/hilo/procesadores lògicos(software):
+De forma estàndar, suelen ser 2 hilos por nùcleo.
+Encargados de administrar las tareas/instrucciones del proceso.
+
+Las tareas se pueden administrar y ejecutar de forma:
+
+- SECUENCIAL/SINCRONO. Una instrucciòn a la vez,
+
+- PARALELA. Una serie de instrucciones que se reparten en màs de un hilo para ejecutar varias tareas al mismo tiempo y acabar màs rapido
+
+- CONCURRENTE/ASINCRONO. Una serie de instrucciones que simulan paralelismo en un solo hilo/menos recursos, ejecutandose de forma estrategica dandole prioridad a algunas instrucciones con 
+respecto a otras. Esta prioridad, la suele establecer el lenguaje ò el programador. En javascript, lo hace el event loop que puede vivir en el
+browser ò en node y depende de còmo el programador domine el flujo, para no bloquear el hilo.
+Un cliente, es un software que consume datos
+de un servidor.
+
+
+===============================================================================================================
+Un cliente es un software que hace peticiones a un servidor para consumir los datos
+
+Un servidor, es un software que despacha
+peticiones de un cliente.

@@ -1,0 +1,23 @@
+{
+  "name": "devfbatch18b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "holaMundoConNode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikemaya/devFBatch18B.git"
+  },
+  "keywords": [
+    "programacion",
+    "node"
+  ],
+  "author": "Enrique Maya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kikemaya/devFBatch18B/issues"
+  },
+  "homepage": "https://github.com/kikemaya/devFBatch18B#readme"
+}
