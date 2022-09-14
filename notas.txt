@@ -94,12 +94,36 @@ Las tareas se pueden administrar y ejecutar de forma:
 - CONCURRENTE/ASINCRONO. Una serie de instrucciones que simulan paralelismo en un solo hilo/menos recursos, ejecutandose de forma estrategica dandole prioridad a algunas instrucciones con 
 respecto a otras. Esta prioridad, la suele establecer el lenguaje ò el programador. En javascript, lo hace el event loop que puede vivir en el
 browser ò en node y depende de còmo el programador domine el flujo, para no bloquear el hilo.
-Un cliente, es un software que consume datos
-de un servidor.
 
 
 ===============================================================================================================
-Un cliente es un software que hace peticiones a un servidor para consumir los datos
 
-Un servidor, es un software que despacha
-peticiones de un cliente.
+Un cliente/consumidor, es un software que hace peticiones a un servidor para consumir los datos
+
+Un servidor, es un software que despacha peticiones de un cliente.
+
+===============================================================================================================
+
+INTERPRETACIÒN vs COMPILACIÒN
+
+- javascript ENGINE: Entorno en donde se interpreta el lenguaje
+
+- INTERPRETACIÒN, se hace en tiempo real (browser ò node junto con su (javascript engine/interprete))
+
+* Instrucciones de js(lenguaje de alto nivel), pasan a:
+
+* Assembler -> traducir las instrucciones de alto nivel y pasarlas a direcciones en memoria (bits, bytes), pasan a:
+
+* machine code(lenguaje maquina) = 0101010 => pulsos electricos/Binario, pasan a ser administrados por el procesador.
+
+
+- COMPILACIÒN, se hace la traduccion desde alto nivel a machine code, pero se crea un archivo .exe con los "binarios"
+
+===============================================================================================================
+COMPONENTES DEL MOTOR DE JAVASCRIPT(JAVASCRIPT ENGINE)
+Memory Heap, Donde todos los datos son guardados: variables, funciones, objetos.
+Call Stack, manda llamar TODAS las instrucciones y las apila para ejecutarlas.
+
+===============================================================================================================
+EVENT LOOP DE FORMA VISUAL
+http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D

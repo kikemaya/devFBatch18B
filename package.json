@@ -10,14 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/kikemaya/devFBatch18B.git"
   },
-  "keywords": [
-    "programacion",
-    "node"
-  ],
+  "keywords": [],
   "author": "Enrique Maya",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kikemaya/devFBatch18B/issues"
   },
-  "homepage": "https://github.com/kikemaya/devFBatch18B#readme"
+  "homepage": "https://github.com/kikemaya/devFBatch18B#readme",
+  "devDependencies": {
+    "express": "^4.18.1"
+  }
 }
