@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kikemaya/devFBatch18B#readme",
   "devDependencies": {
     "express": "^4.18.1"
+  },
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
   }
 }
