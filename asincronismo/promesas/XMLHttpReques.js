@@ -27,7 +27,7 @@ function getData(url, callback) {
 // Lo que vemos.- const data = getData(url, callback)
 // Lo que siempre retornaria = const data = undefined;
 
-function datosPokemon (data, error) {
+function datosPokemon(data, error) {
   console.log("Datos desde el callback", data, error);
 }
 

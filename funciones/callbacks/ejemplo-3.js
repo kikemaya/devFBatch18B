@@ -1,14 +1,14 @@
 const hola = (nombre, unaFuncion) => {
   setTimeout(() => {
-    console.log('Hola ' + nombre)
-    return unaFuncion()
-  }, 1500)
-}
+    console.log("Hola " + nombre);
+    return unaFuncion();
+  }, 1500);
+};
 
 const adios = () => {
   setTimeout(() => {
-    console.log('adios')
-  }, 1000)
-}
+    console.log("adios");
+  }, 1000);
+};
 
-hola("Sam", adios)
+hola("Sam", adios);
