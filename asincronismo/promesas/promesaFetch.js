@@ -48,3 +48,11 @@ getData(url2)
 //   .catch((error) => {
 //     console.log("error ", error);
 //   });
+
+
+
+function sumar(num1, num2) {
+  
+}
+
+sumar(1, 2)

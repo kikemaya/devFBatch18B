@@ -33,6 +33,6 @@ function datosPokemon(data, error) {
 
 getData(url, datosPokemon);
 
-getData(url2, (data) => {
+getData(url2, (data, error) => {
   console.log("Datos desde el callback", data, error);
 });
