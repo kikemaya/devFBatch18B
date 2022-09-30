@@ -1,0 +1,118 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style: none;
+}
+
+/* MAIN CONTAINERS */
+.app {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* SEGUNDA OPCION PARA EL FONDO INICIO*/
+.bg-secondary {
+  background: linear-gradient(to right, #cc5333, #23074d);
+}
+/* SEGUNDA OPCION PARA EL FONDO FIN*/
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
+  background-color: white;
+  height: 500px;
+  max-width: 500px;
+  width: 90%;
+  align-items: center;
+  padding: 50px 0;
+}
+
+/* ADD TASK */
+.add-task {
+  width: 90%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.input-todo {
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  grid-column: span 2;
+}
+.btn-add,
+.btn-edit,
+.btn-delete,
+.btn-background {
+  padding: 15px 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  background-color: #28a745;
+  transition: all;
+}
+
+.btn-add:hover,
+.btn-edit:hover,
+.btn-delete:hover,
+.btn-background:hover,
+.btn-edit:hover {
+  filter: brightness(0.85);
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+.btn-delete {
+  background-color: #dc3545;
+}
+
+.btn-bg-container {
+  width: 90%;
+}
+.btn-background {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: 600;
+}
+/* CONTENT */
+.content-wrapper {
+  width: 90%;
+  /* height: 60%; */
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.content-wrapper li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.content-wrapper li p {
+  grid-column: span 2;
+}
+.content-wrapper li div {
+  display: flex;
+  height: 50px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .content-wrapper li p {
+    grid-column: span 3;
+  }
+}

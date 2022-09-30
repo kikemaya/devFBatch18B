@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "uuid": "^9.0.0",
     "xmlhttprequest": "^1.8.0"
   }
 }
