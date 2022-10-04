@@ -72,5 +72,3 @@ Tip: asigna roles y delega tareas.
 
 Divide y venceràs...
 Happy Hacking!.
-
-:D!
